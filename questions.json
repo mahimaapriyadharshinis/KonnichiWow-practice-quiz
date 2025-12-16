@@ -1,0 +1,68 @@
+[
+  {
+    "question": "What does the Japanese greeting \"Konnichiwa\" usually mean?",
+    "options": [
+      "Hello / Good afternoon",
+      "Good night",
+      "Thank you",
+      "Goodbye"
+    ],
+    "answer": 0,
+    "explanation": "\"Konnichiwa\" is commonly used as a daytime greeting meaning hello or good afternoon."
+  },
+  {
+    "question": "Which writing system in Japanese is mainly used for foreign words?",
+    "options": [
+      "Kanji",
+      "Hiragana",
+      "Romaji",
+      "Katakana"
+    ],
+    "answer": 3,
+    "explanation": "Katakana is used for foreign loanwords, names, and onomatopoeia."
+  },
+  {
+    "question": "What does \"Arigatou Gozaimasu\" express?",
+    "options": [
+      "Greeting",
+      "Apology",
+      "Gratitude",
+      "Farewell"
+    ],
+    "answer": 2,
+    "explanation": "\"Arigatou Gozaimasu\" is a polite way to say thank you."
+  },
+  {
+    "question": "Which of the following is considered polite behavior in Japanese culture?",
+    "options": [
+      "Eating while walking",
+      "Speaking loudly in public transport",
+      "Pointing directly at people",
+      "Bowing while greeting"
+    ],
+    "answer": 3,
+    "explanation": "Bowing is a respectful and common form of greeting in Japan."
+  },
+  {
+    "question": "What is the main role of Kanji in the Japanese language?",
+    "options": [
+      "Used only for names",
+      "Represent sounds only",
+      "Represent meaning and concepts",
+      "Replace Hiragana"
+    ],
+    "answer": 2,
+    "explanation": "Kanji characters represent meanings and ideas, often derived from Chinese characters."
+  },
+  {
+    "question": "Which concept best reflects Japanese work culture?",
+    "options": [
+      "Avoiding feedback",
+      "Kaizen (continuous improvement)",
+      "Minimal collaboration",
+      "Individual achievement over teamwork"
+    ],
+    "answer": 1,
+    "explanation": "Kaizen emphasizes continuous improvement and is deeply rooted in Japanese work culture."
+  }
+]

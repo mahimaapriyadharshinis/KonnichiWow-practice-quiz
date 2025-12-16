@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', system-ui, sans-serif;
+}
+
+
+body {
+  margin: 0;
+}
+.brand-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.brand-image {
+  height: 60px;       /* slightly bigger logo */
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* BRAND */
+.brand-header {
+  background: #EC265F;
+  padding: 12px;
+  text-align: center;
+}
+
+.brand-logo {
+  color: white;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.brand-logo span {
+  color: #26ECB4;
+}
+
+/* COLORS */
+:root {
+  --pink: #EC265F;
+  --green: #26ECB4;
+}
+
+/* TOP */
+.top-screen {
+  min-height: 43vh;
+  background-color: var(--pink);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.12) 1px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 16px;
+}
+
+.pill {
+  background:rgb(246, 245, 245);
+  border-radius: 999px;
+  padding: 14px 24px;
+  width: min(720px, 95%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pill span {
+  font-family: 'Quicksand';
+  
+  color: var(--pink);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.pill-progress {
+  flex: 1;
+  height: 8px;
+  background: #e5e7eb;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.pill-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--green);
+}
+
+.question {
+  margin-top: 32px;
+  color: white;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 800;  /* Increased from 600 to 700 */
+}
+
+
+.level-text {
+  margin-top: 8px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.bottom-screen {
+  min-height: 55vh;
+  background-color: rgb(38, 236, 180);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px);
+  /* This creates the squares */
+  background-size: 40px 40px; 
+  padding: 32px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+/* Concise Fix for Visibility */
+.bottom-screen input[type="checkbox"] {
+  appearance: auto !important;
+  -webkit-appearance: checkbox !important;
+  width: 25px !important;
+  height: 25px !important;
+  flex-shrink: 0; /* Prevents disappearing in flexbox */
+  accent-color: #f43f5e; /* This makes the "check" red like your top header */
+  background-color: white !important; /* Ensures the box is solid white */
+  border: 2px solid white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.options {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.option {
+  padding: 18px;
+  border-radius: 16px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: left;
+  font-weight: 500;
+}
+
+.option:focus {
+  outline: 3px solid #fff;
+}
+
+.correct {
+  background: rgb(14, 164, 122);
+  border-color: #f2f6f3;
+}
+
+.wrong {
+  background: rgb(235, 20, 81);
+  border-color: #faf8f8;
+}
+
+.feedback {
+  background: var(--pink);
+  color: white;
+  padding: 16px;
+  border-radius: 16px;
+  max-width: 600px;
+  text-align: center;
+}
+
+.next-btn {
+  background:rgb(236, 38, 95);
+  color: rgb(241, 238, 239);
+  border: none;
+  padding: 14px 24px;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.summary {
+    min-height: 100vh;
+  background-color: var(--pink);
+  background-image:
+    linear-gradient(rgba(255,255,255,0.12) 1px, transparent 2px),
+    linear-gradient(90deg, rgba(255,255,255,0.12) 1px, transparent 1px);
+  background-size: 32px 32px;
+  padding: 40px;
+  font-family: 'Quicksand';
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+.question:focus {
+  outline: none;
+}
+
+/* DESKTOP */
+@media (min-width: 768px) {
+  .options {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .option {
+    width: 48%;
+  }
+}

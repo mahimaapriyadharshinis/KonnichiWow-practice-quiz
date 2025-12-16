@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>KonnichiWow – Practice Quiz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- BRAND HEADER -->
+  <header class="brand-header">
+    <!-- Logo added -->
+    <img src="logo.png" alt="KonnichiWow Logo" class="brand-image" />
+  </header>
+
+  <!-- TOP SECTION -->
+  <section class="top-screen">
+    <div class="pill" aria-live="polite">
+      <span id="counter">Question 1 of 6</span>
+
+      <div
+        class="pill-progress"
+        aria-label="Quiz progress"
+        role="progressbar"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        aria-valuenow="0"
+      >
+        <div id="progressFill" class="pill-progress-fill"></div>
+      </div>
+
+      <span id="streak">🔥 Streak: 0</span>
+    </div>
+
+    <!-- Accessibility enhancement ONLY -->
+    <h1
+      id="questionText"
+      class="question"
+      tabindex="-1"
+      aria-live="polite"
+    ></h1>
+
+    <p id="levelText" class="level-text"></p>
+  </section>
+
+  <!-- BOTTOM SECTION -->
+  <section class="bottom-screen">
+    <div
+      id="options"
+      class="options"
+      role="radiogroup"
+      aria-label="Answer choices"
+    ></div>
+
+    <div
+      id="feedback"
+      class="feedback hidden"
+      aria-live="assertive"
+    ></div>
+
+    <button id="nextBtn" class="next-btn hidden">
+      Next →
+    </button>
+  </section>
+
+  <!-- SUMMARY SECTION -->
+  <section id="summary" class="summary hidden"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
