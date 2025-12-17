@@ -5,20 +5,20 @@
   <title>KonnichiWow – Practice Quiz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- BRAND HEADER -->
+  <div class="kana-overlay" aria-hidden="true">
+    んわらやま<br>りい<br>るゆむ<br>れめ<br>をろよも
+  </div>
+
   <header class="brand-header">
-    <!-- Logo added -->
-    <img src="logo.png" alt="KonnichiWow Logo" class="brand-image" />
+    <img src="New Project (8).png" alt="KonnichiWow Logo" class="brand-image" />
   </header>
 
-  <!-- TOP SECTION -->
   <section class="top-screen">
     <div class="pill" aria-live="polite">
       <span id="counter">Question 1 of 6</span>
@@ -37,7 +37,6 @@
       <span id="streak">🔥 Streak: 0</span>
     </div>
 
-    <!-- Accessibility enhancement ONLY -->
     <h1
       id="questionText"
       class="question"
@@ -46,9 +45,10 @@
     ></h1>
 
     <p id="levelText" class="level-text"></p>
+
+    <img src="tenkun_peeping_out_from_above.png" alt="" class="mascot-character" />
   </section>
 
-  <!-- BOTTOM SECTION -->
   <section class="bottom-screen">
     <div
       id="options"
@@ -68,7 +68,6 @@
     </button>
   </section>
 
-  <!-- SUMMARY SECTION -->
   <section id="summary" class="summary hidden"></section>
 
   <script src="script.js"></script>
